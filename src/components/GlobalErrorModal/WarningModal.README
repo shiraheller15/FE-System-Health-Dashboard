@@ -1,0 +1,6 @@
+Create a global error model when an unexpected error occurs
+This is done so that:
+everyone who makes an axios call will reach a certain stopping point-(serviceBase.interceptor)
+during the return of the response from the server
+and there a check is made using an interceptor
+and if there is an error, it is checked whether the status is equal to 500 and then the model will open
